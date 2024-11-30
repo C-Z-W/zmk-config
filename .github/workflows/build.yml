@@ -1,6 +1,7 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  runs-on: czw-2
+  runs-on: 
+  labels: czw-2
   build:
     uses: sky-bro/zmk/.github/workflows/build-user-config.yml@k4i-sweep-kbd
