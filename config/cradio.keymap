@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W               &kp E           &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O       &kp P
-&ht CAPS A    &ht LEFT_CONTROL S  &ht LEFT_ALT D  &ht LGUI F   &kp G        &kp H      &ht RGUI J   &ht RCTRL K  &ht RALT L  &kp BSPC
-&ht LSHIFT Z  &kp X               &kp C           &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT     &kp ENTER
-                                                  &lt LEF TAB  &kp SPACE    &kp SPACE  &lt RIG TAB
+&kp Q         &kp W               &kp E           &kp R       &kp T        &kp Y      &kp U       &kp I        &kp O       &kp P
+&ht CAPS A    &ht LEFT_CONTROL S  &ht LEFT_ALT D  &ht LGUI F  &kp G        &kp H      &ht RGUI J  &ht RCTRL K  &ht RALT L  &kp BSPC
+&ht LSHIFT Z  &kp X               &kp C           &kp V       &kp B        &kp N      &kp M       &kp COMMA    &kp DOT     &ht RSHIFT ENTER
+                                                  &lt 2 TAB   &kp SPACE    &kp SPACE  &lt 3 TAB
             >;
         };
 
@@ -79,20 +79,20 @@
 &kp Q  &kp W       &kp E       &kp R        &kp T         &kp Y      &kp U        &kp I       &kp O       &kp P
 &kp A  &ht LALT S  &ht LGUI D  &ht LCTRL F  &kp G         &kp H      &ht RCTRL J  &ht RGUI K  &ht RALT L  &kp BSPC
 &kp Z  &kp X       &kp C       &kp V        &kp B         &kp N      &kp M        &kp COMMA   &kp DOT     &kp ENTER
-                               &lt LEF TAB  &kp LSHIFT    &kp SPACE  &lt RIG TAB
+                               &lt 2 TAB    &kp LSHIFT    &kp SPACE  &lt 3 TAB
             >;
         };
 
-        right_layer {
+        Layer_2 {
             bindings = <
-&kp N1   &kp N2    &kp N3     &kp N4   &kp N5     &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
-&kp DEL  &kp CAPS  &kp PSCRN  &kp INS  &trans     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans   &trans    &trans     &trans   &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &bootloader
-                              &trans   &kp ESC    &trans    &trans
+&kp N1          &kp N2          &kp N3        &kp N4           &kp N5        &kp N6         &kp N7      &kp N8            &kp N9        &kp N0
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ESC       &kp C_BRI_UP   &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans
+&kp END         &kp PAGE_DOWN   &kp PAGE_UP   &kp HOME         &kp DELETE    &kp C_BRI_DEC  &kp C_MUTE  &kp C_VOL_DN      &kp C_VOL_UP  &bootloader
+                                              &trans           &trans        &trans         &trans
             >;
         };
 
-        left_layer {
+        Layer_3 {
             bindings = <
 &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
 &kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report    &kp FSLH    &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
@@ -103,9 +103,9 @@
 
         tri_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG   &tog WIN  &kp C_MUTE    &kp C_PREV
-&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_BRI_UP   &trans    &kp C_VOL_UP  &kp C_PP
-&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &trans    &kp C_VOL_DN  &kp C_NEXT
+&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &out OUT_TOG                            &tog WIN               &kp C_MUTE    &kp C_PREV
+&kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       &kp C_AC_PRINT         &kp C_VOL_UP  &kp C_PP
+&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &bt BT_SEL 4  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &kp C_AL_PRESENTATION  &kp C_VOL_DN  &kp C_NEXT
                           &trans   &trans          &trans        &trans
             >;
         };
